@@ -1,5 +1,4 @@
 .App {
   grid-template-columns: auto;
   background-color: var(--black);
-  padding-inline: 0.5rem;
 }
