@@ -1,0 +1,34 @@
+.roles-container {
+  margin-top: 20px;
+  /* padding-inline: 1.5rem; */
+  height: 600px;
+}
+
+.section-title {
+  padding-inline: 1.5rem;
+}
+
+.roles-container > .gallary {
+  position: relative;
+  overflow-x: auto;
+  z-index: 2;
+}
+
+.overfow-flex {
+  padding-inline: 1.5rem;
+  overflow-x: visible;
+  display: flex;
+  gap: 20px;
+  width: fit-content;
+}
+
+.roles-container > .bg-rectangle {
+  position: relative;
+  width: 70%;
+  height: 350px;
+  top: -350px;
+  background-image: var(--blue-gradient);
+  z-index: 0;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}

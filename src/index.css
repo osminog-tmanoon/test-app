@@ -10,10 +10,11 @@
   --font-family: 'Rubik', 'Arial';
   --black: #030B12;
   --dark-grey: #0F1A23;
-  --light-grey: #7289A6;
+  --light-grey: #71849c;
   --cta-color: #A5BDDA;
   --white: #fff;
   --yellow-gradient: linear-gradient(90deg, rgba(255, 226, 116, 1) 0%, rgba(239, 160, 124, 1) 100%);
+  --blue-gradient: linear-gradient(90deg, rgba(29, 217, 255, 0.67) 0%, rgba(65, 197, 248, 0.5762) 30.21%, rgba(0, 117, 255, 0.3082) 100%);
   
 }
 
@@ -34,6 +35,29 @@ body {
   width: 100vw;
   height: 100vh;
   background-color: var(--black);
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  scrollbar-gutter: stable;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f100;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #1B2731;
+  border-radius: 6px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #2c3f4f;
 }
 
 .title {
@@ -57,7 +81,7 @@ body {
   font-weight: 600;
   color: var(--white);
   word-break: break-word;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .sectionTitle::after {
@@ -72,6 +96,8 @@ body {
 }
 
 .cartTitle {
+  padding-inline: 1rem;
+  padding-top: 1rem;
   font-size: 1.1rem;
   margin-bottom: 0.4rem;
   font-weight: 600;
@@ -80,6 +106,8 @@ body {
 }
 
 .text {
+  padding-inline: 1rem;
+  padding-bottom: 1rem;
   font-size: 1rem;
   line-height: 1.5em;
   font-weight: 200;

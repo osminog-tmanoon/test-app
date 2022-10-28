@@ -4,6 +4,15 @@
   margin-inline: 1.5rem;
 }
 
-.title {
-  margin-bottom: 2rem;
+.stars-1 {
+  position: relative;
+  right: 50%;
+  transform: translateX(50%);
+  top: -10px;
+  background-image: url('../../../assests/SVG/stars.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 170px;
+ height: 70px;
+  z-index: 1;
 }
