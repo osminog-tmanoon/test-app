@@ -22,8 +22,13 @@ html {
   height: 100vh;
 }
 
+::selection {
+  background-color: #294255;
+}
+
 body {
   overflow-x: hidden;
+  scrollbar-gutter: auto;
   direction: rtl;
   font-family: var(--font-family);
   width: 100vw;
@@ -32,7 +37,7 @@ body {
 }
 
 .title {
-  font-size: 3rem;
+  font-size: 2.7rem;
   font-weight: 700;
   color: var(--white);
   word-break: break-word;
@@ -41,20 +46,43 @@ body {
 .subTitle {
   color: var(--light-grey);
   font-weight: 200;
-  letter-spacing: 0.3rem;
-  margin-block: 0.5rem;
+  letter-spacing: 0.24rem;
+  /* margin-block: 0.5rem; */
+  line-height: 2rem;
   word-break: break-word;
 }
 
 .sectionTitle {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--white);
+  word-break: break-word;
+  margin-bottom: 1rem;
+}
+
+.sectionTitle::after {
+  content: '';
+  position: relative;
+  display: block;
+  background-image: var(--yellow-gradient);
+  width: 84px;
+  height: 4px;
+  margin-top: 0.5rem;
+  border-radius: 6px;
+}
+
+.cartTitle {
+  font-size: 1.1rem;
+  margin-bottom: 0.4rem;
   font-weight: 600;
   color: var(--white);
   word-break: break-word;
 }
 
 .text {
-  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5em;
   font-weight: 200;
+  color: var(--light-grey);
   word-break: break-word;
 }

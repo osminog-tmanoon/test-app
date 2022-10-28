@@ -10,7 +10,7 @@ const App = () => {
     <div className="App">
       <Opening content={content} />
       <main>
-        <SortiesProccess />
+        <SortiesProccess content={content}/>
       </main>
     </div>
   );

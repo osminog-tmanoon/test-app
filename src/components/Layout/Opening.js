@@ -7,7 +7,7 @@ const Opening = (props) => {
     <div className={classes["opening-container"]}>
       <header className={classes.header}>
         <div className={classes.logo}></div>
-        <h1 className="title">{title}</h1>
+        <h1 className={`${"title"} ${classes['opening-title']}`}>{title}</h1>
         <h3 className="subTitle">{subTitle}</h3>
       </header>
       <figure className={classes.figure}>

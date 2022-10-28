@@ -1,0 +1,9 @@
+.section-container {
+  display: flex;
+  flex-direction: column;
+  margin-inline: 1.5rem;
+}
+
+.title {
+  margin-bottom: 2rem;
+}
