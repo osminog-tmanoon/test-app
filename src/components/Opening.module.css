@@ -1,0 +1,15 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.logo {
+  width: 70px;;
+  height: 70px;
+  align-self: flex-start;
+  margin-top: 20px;
+  background-image: url('../assests/logo.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
