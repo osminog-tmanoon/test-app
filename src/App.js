@@ -4,6 +4,7 @@ import content from './content.json'
 import './App.css'
 
 const App = () => {
+  /* hello */
   return (
     <div className='App'>
       <Opening content={content}/> 
