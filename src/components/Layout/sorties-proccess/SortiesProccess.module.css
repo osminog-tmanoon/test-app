@@ -3,6 +3,7 @@
   flex-direction: column;
   margin-inline: var(--white-space);
   --card-bg: var(--dark-grey);
+  background-color: var(--black);
 }
 
 .stars-1 {
@@ -19,9 +20,10 @@
 }
 
 .sortiesCard {
-  background-color: var(--card-bg);
-  border-radius: 6px;
-  margin-block: 6px;
+  /* background-color: var(--black); */
+  border-bottom: 2px solid var(--card-bg);
+  /* border-radius: 6px; */
+  /* margin-block: 6px; */
   min-height: 100px;
   z-index: 5;
 }
