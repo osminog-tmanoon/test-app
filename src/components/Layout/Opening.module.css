@@ -13,7 +13,7 @@
   z-index: 1;
 }
 
-.header > * {
+.header>* {
   justify-self: start;
   margin-inline: 1.5rem;
   padding-left: 15px;
@@ -36,10 +36,10 @@
 }
 
 .figure {
-  position: relative;
+  position: absolute;
   width: 100vw;
   opacity: 0.7;
-  height: 450px;
+  height: 750px;
 }
 
 .hero {
@@ -51,4 +51,30 @@
   background-position-y: 47%;
   background-position-x: -30px;
   background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 650px) {
+  .hero {
+    background-size: 900px;
+    background-position-y: 40%;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .hero {
+    background-size: 1100px;
+    background-position-y: 42%;
+  }
+}
+
+@media screen and (min-width: 1050px) {
+  .hero {
+    background-size: 1250px;
+    background-position-y: 51%;
+  }
+
+  .header {
+    text-align: right;
+  }
+
 }

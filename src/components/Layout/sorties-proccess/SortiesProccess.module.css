@@ -14,6 +14,14 @@
   background-repeat: no-repeat;
   background-size: cover;
   width: 170px;
- height: 70px;
+  height: 70px;
   z-index: 1;
+}
+
+.sortiesCard {
+  background-color: var(--card-bg);
+  border-radius: 6px;
+  margin-block: 6px;
+  min-height: 100px;
+  z-index: 5;
 }

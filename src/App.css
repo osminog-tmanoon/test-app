@@ -12,3 +12,21 @@
   flex-direction: column;
   justify-content: space-around;
 }
+
+@media screen and (min-width: 650px) {
+  .App {
+    grid-template-rows: 750px auto auto;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .App {
+    grid-template-rows: 800px auto auto;
+  }
+}
+
+@media screen and (min-width: 1050px) {
+  .App {
+    grid-template-rows: 800px auto auto;
+  }
+}

@@ -6,10 +6,14 @@ const SortiesProccess = (props) => {
   const content = props.content[1];
 
   const levelsElement = content.levels.map((item) => (
-    <Card key={item.id} style={{ padding: "1rem" }}>
+    <div
+      key={item.id}
+      style={{ padding: "1rem" }}
+      className={classes.sortiesCard}
+    >
       <h4 className="cartTitle">{item.title}</h4>
       <p className="text">{item.text}</p>
-    </Card>
+    </div>
   ));
   return (
     <section className={classes["section-container"]}>
