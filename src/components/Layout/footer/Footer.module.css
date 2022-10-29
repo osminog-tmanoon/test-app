@@ -15,7 +15,7 @@
 
 .stars-1 {
   position: relative;
-  right: 86%;
+  right: 76%;
   transform: translateX(50%);
   top: -150px;
   background-image: url('../../../assests/SVG/stars.svg');
