@@ -5,7 +5,7 @@
 }
 
 .section-title {
-  padding-inline: 1.5rem;
+  padding-inline: var(--white-space);
 }
 
 .roles-container > .gallary {
@@ -15,7 +15,7 @@
 }
 
 .overfow-flex {
-  padding-inline: 1.5rem;
+  padding-inline: var(--white-space);
   overflow-x: visible;
   display: flex;
   gap: 20px;

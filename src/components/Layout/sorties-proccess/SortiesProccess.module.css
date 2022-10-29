@@ -1,7 +1,7 @@
 .section-container {
   display: flex;
   flex-direction: column;
-  margin-inline: 1.5rem;
+  margin-inline: var(--white-space);
   --card-bg: var(--dark-grey);
 }
 
@@ -24,4 +24,15 @@
   margin-block: 6px;
   min-height: 100px;
   z-index: 5;
+}
+
+@media screen and (min-width: 1050px) {
+  .sortiesCard {
+    width: 500px;
+  }
+
+  .stars-1 {
+    position: absolute;
+    height: 170px;
+  }
 }

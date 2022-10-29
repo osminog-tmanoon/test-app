@@ -8,7 +8,6 @@ const SortiesProccess = (props) => {
   const levelsElement = content.levels.map((item) => (
     <div
       key={item.id}
-      style={{ padding: "1rem" }}
       className={classes.sortiesCard}
     >
       <h4 className="cartTitle">{item.title}</h4>

@@ -27,7 +27,8 @@
 }
 
 .social-container {
-  padding: 1rem;
+  padding-block: 1rem;
+  padding-inline: var(--white-space);
   height: 80px;
   display: flex;
   flex-direction: row;

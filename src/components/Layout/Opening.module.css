@@ -1,6 +1,5 @@
 .opening-container {
   height: fit-content;
-  display: grid;
   grid-template-rows: auto auto;
   height: fit-content;
 }
@@ -13,15 +12,15 @@
   z-index: 1;
 }
 
-.header>* {
+.header > * {
   justify-self: start;
-  margin-inline: 1.5rem;
+  margin-inline: var(--white-space);
   padding-left: 15px;
 }
 
 .logo {
   z-index: 100;
-  position: absolute;
+  position: relative;
   width: 70px;
   height: 70px;
   align-self: flex-start;
@@ -31,13 +30,10 @@
   background-repeat: no-repeat;
 }
 
-.opening-title {
-  margin-top: 70px;
-}
-
 .figure {
   position: absolute;
   width: 100vw;
+  top: 0;
   opacity: 0.7;
   height: 750px;
 }
@@ -58,6 +54,13 @@
     background-size: 900px;
     background-position-y: 40%;
   }
+
+  .logo {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-position-x: 200%;
+  }
 }
 
 @media screen and (min-width: 850px) {
@@ -69,8 +72,22 @@
 
 @media screen and (min-width: 1050px) {
   .hero {
-    background-size: 1250px;
-    background-position-y: 51%;
+    background-size: 1000px;
+    background-position-y: 40%;
+  }
+
+  .header {
+    text-align: right;
+  }
+  .opening-title {
+    margin-top: 0px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hero {
+    background-size: 1350px;
+    background-position-y: 47%;
   }
 
   .header {

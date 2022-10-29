@@ -7,7 +7,7 @@ const Footer = (props) => {
 
   const openInstagramLink = (event, value) => {
     event.preventDefault();
-    window.open(value, "_BLANK");
+    window.open(value);
   };
 
   const callNumber = (event, value) => {
