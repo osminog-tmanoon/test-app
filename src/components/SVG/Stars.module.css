@@ -1,0 +1,31 @@
+.stars-1 {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 170px;
+  z-index: 1;
+}
+
+.cls-1 {
+  opacity: .5;
+}
+
+.cls-2 {
+  mix-blend-mode: lighten;
+}
+
+.cls-3 {
+  isolation: isolate;
+}
+
+.cls-4 {
+  opacity: .8;
+}
+
+.cls-5 {
+  fill: #1dffff;
+}
+
+.cls-6 {
+  fill: #486375;
+}

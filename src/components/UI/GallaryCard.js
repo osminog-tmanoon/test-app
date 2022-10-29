@@ -1,11 +1,11 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import Card from "./Card";
 import classes from "./GallaryCard.module.css";
 
 const GallaryCard = (props) => {
+  const cardRef = useRef();
   const paragraphArray = Array.from(props.content.text);
   const maxLetters = 137;
-  console.log(paragraphArray);
 
   let newArray = paragraphArray.filter(
     (item, index) => index <= maxLetters - 1
@@ -16,11 +16,11 @@ const GallaryCard = (props) => {
   }
 
   const newText = newArray.join("");
-  console.log(newText);
+
   return (
-    <div>
+    <div ref={cardRef}>
       <Card className={classes["gallar-card-container"]}>
-        <div className={classes["gallary-image"]}></div>
+        <img className={classes["gallary-image"]} />
         <h3 className="cartTitle">{props.content.courseName}</h3>
         <div className={classes["text-area"]}>
           <p className="text">{newText}</p>

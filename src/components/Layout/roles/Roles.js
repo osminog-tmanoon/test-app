@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import Stars from "../../SVG/Stars";
 import Card from "../../UI/Card";
 import GallaryCard from "../../UI/GallaryCard";
 import Gallary from "./Gallary";
@@ -8,7 +9,7 @@ const Roles = (props) => {
   const content = props.content[2];
 
   const gallaryItems = content.gallary.map((item) => (
-    <GallaryCard content={item} key={item.id}/>
+    <GallaryCard content={item} key={item.id} />
   ));
 
   return (
@@ -19,7 +20,7 @@ const Roles = (props) => {
       <article className={classes["gallary"]}>
         <div className={classes["overfow-flex"]}>{gallaryItems}</div>
       </article>
-      <div className={classes['bg-rectangle']}></div>
+      <div className={classes["bg-rectangle"]}></div>
     </section>
   );
 };
