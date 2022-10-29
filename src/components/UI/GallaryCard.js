@@ -17,11 +17,31 @@ const GallaryCard = (props) => {
 
   const newText = newArray.join("");
 
+  const cardImage = {
+    backgroundImage: `url(${
+      process.env.PUBLIC_URL +
+      `${
+        props.content.courseImage
+          ? props.content.courseImage
+          : "./placeholderImage-3.svg"
+      }`
+    })`,
+    opacity: props.content.courseImage
+    ? 0.6
+    : 0.12
+  };
+
   return (
     <div ref={cardRef}>
       <Card className={classes["gallar-card-container"]}>
-        <img className={classes["gallary-image"]} />
-        <h3 className="cartTitle">{props.content.courseName}</h3>
+        <div
+          className={classes["gallary-image"]}
+          style={cardImage}
+          alt="תמונה של המסלול"
+        ></div>
+        <h3 className={`cartTitle ${classes.h3}`}>
+          {props.content.courseName}
+        </h3>
         <div className={classes["text-area"]}>
           <p className="text">{newText}</p>
         </div>
@@ -31,32 +51,28 @@ const GallaryCard = (props) => {
           viewBox="0 0 43 21"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          className={classes.icon}
+          className={`${classes.icon} ${classes["cls-1"]}`}
         >
           <path
             d="M1 11H29"
-            stroke="#A5BDDA"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
           <path
             d="M1.30359 10.2971L5.77104 5.64854L10.2385 1"
-            stroke="#A5BDDA"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
           <path
             d="M9.34937 20L1 10.6085"
-            stroke="#A5BDDA"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
           <path
             d="M35 11H41.5385"
-            stroke="#A5BDDA"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"

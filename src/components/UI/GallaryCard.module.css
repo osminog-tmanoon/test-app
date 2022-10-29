@@ -4,16 +4,29 @@
   margin-bottom: 30px;
   display: flex;
   flex-direction: column;
+  cursor: pointer;
+  --card-bg: var(--dark-grey);
+  --card-title: var(--white);
+  --arrow-color: var(--cta-color);
+  transition: all 200ms ease;
+}
+
+.gallar-card-container:hover {
+  --card-bg: var(--white);
+  --card-title: var(--dark-grey);
+  --arrow-color: var(--grey);
+  transition: all 200ms ease;
 }
 
 .gallary-image {
   width: 100%;
   height: 60%;
-  background-color: var(--light-grey);
-  opacity: 0.2;
+  background-color: var(--dark-grey);
+  background-size: cover;
   border: none;
   border-top-right-radius: 6px;
   border-top-left-radius: 6px;
+  border-bottom: 1px solid var(--light-grey);
 }
 
 .text-area {
@@ -28,4 +41,15 @@
   align-self: flex-end;
   margin: 20px;
   transform: scale(1.6);
+}
+
+.cls-1 > * {
+  stroke: var(--arrow-color);
+}
+.cls-1:hover > * {
+  stroke: var(--arrow-color);
+}
+
+.h3 {
+  color: var(--card-title);
 }
