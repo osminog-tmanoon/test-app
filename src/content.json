@@ -32,7 +32,7 @@
     "gallary": [
       {
         "courseName": "מסלול QA",
-        "courseImage": "./QA/QA_image.jpg",
+        "courseImage": "/QA/QA_image.jpg",
         "text": "אנשי ה-QA משתתפים בתהליך הפיתוח של המערכות המבצעיות התורמות לעליונות הטכנולוגית של צה\"ל. עליהם להישאר מעודכנים בטכנולוגיות המתקדמות ביותר ובדרכים שונות לוידוא איכות התוכנות אותן הם בודקים.",
         "id": 0
       },
@@ -51,14 +51,14 @@
   {
     "footer": [
       {
-        "iconUrl": "instagram.svg",
+        "iconUrl": "/instagram.svg",
         "text": "bsmch.alpha",
         "action": "link",
         "actionValue": "https://instagram.com/bsmch.alpha?igshid=YmMyMTA2M2Y=",
         "id": 0
       },
       {
-        "iconUrl": "phone.svg",
+        "iconUrl": "/phone.svg",
         "text": "972509275359+",
         "actionValue": "+972509275359",
         "action": "phone",
