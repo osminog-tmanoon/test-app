@@ -2,7 +2,7 @@ import React from "react";
 import classes from "./Opening.module.css";
 
 const Opening = (props) => {
-  const { title, subTitle, imgUrl, logoUrl } = props.content[0];
+  const { title, subTitle, imgUrl, logoUrl } = props.content.opening;
   return (
     <div className={classes["opening-container"]}>
       <header className={classes.header}>

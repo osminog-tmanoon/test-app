@@ -1,15 +1,12 @@
-import React, { useRef } from "react";
-import Stars from "../../SVG/Stars";
-import Card from "../../UI/Card";
+import React from "react";
 import GallaryCard from "../../UI/GallaryCard";
-import Gallary from "./Gallary";
 import classes from "./Roles.module.css";
 
 const Roles = (props) => {
-  const content = props.content[2];
+  const content = props.content.courses;
 
   const gallaryItems = content.gallary.map((item) => (
-    <GallaryCard content={item} key={item.id} />
+    <GallaryCard content={item} key={item.id} onToggleModal={props.onToggleModal}/>
   ));
 
   return (

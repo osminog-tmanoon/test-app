@@ -3,7 +3,7 @@ import Card from "../../UI/Card";
 import classes from "./Footer.module.css";
 
 const Footer = (props) => {
-  const content = props.content[3];
+  const content = props.content.footer;
 
   const openInstagramLink = (event, value) => {
     event.preventDefault();
@@ -20,7 +20,7 @@ const Footer = (props) => {
     link: openInstagramLink,
   };
 
-  const contactElements = content.footer.map((item) => (
+  const contactElements = content.map((item) => (
     <div className={classes["contact-icon"]} key={item.id}>
       <div
         className={classes.link}

@@ -1,0 +1,19 @@
+.article-container {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--border-color);
+  border-radius: 0px;
+}
+
+.article-container > *:not(.article-image) {
+  padding: 1rem;
+}
+
+.article-image {
+  height: 300px;
+  border: none;
+}
+
+.back-btn {
+  
+}

@@ -1,9 +1,8 @@
 import React from "react";
-import Card from "../../UI/Card";
 import classes from "./SortiesProccess.module.css";
 
 const SortiesProccess = (props) => {
-  const content = props.content[1];
+  const content = props.content.about;
 
   const levelsElement = content.levels.map((item) => (
     <div

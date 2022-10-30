@@ -20,11 +20,14 @@
   transition: all 200ms ease;
 }
 
+.gallary-image--container {
+  overflow: hidden;
+}
+
 .gallary-image {
   grid-row: 1;
   width: 100%;
   background-color: var(--dark-grey);
-  background-size: cover;
   border: none;
   border-top-right-radius: 6px;
   border-top-left-radius: 6px;
