@@ -1,6 +1,6 @@
 {
-  "short_name": "Welcome to Bsmch-Alpha",
-  "name": "Bsmch-Alpha Info",
+  "short_name": "React App",
+  "name": "Create React App Sample",
   "icons": [
     {
       "src": "favicon.ico",
