@@ -25,7 +25,7 @@
   height: 70px;
   align-self: flex-start;
   margin-top: 20px;
-  background-image: url('../../assests/logo.png');
+  background-image: url("../../assests/logo.png");
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -57,9 +57,10 @@
 
   .logo {
     position: relative;
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    /* height: x; */
     background-position-x: 200%;
+    background-size: cover;
   }
 }
 
@@ -82,6 +83,10 @@
   .opening-title {
     margin-top: 0px;
   }
+
+  .logo {
+    background-size: contain;
+  }
 }
 
 @media screen and (min-width: 1280px) {
@@ -93,5 +98,4 @@
   .header {
     text-align: right;
   }
-
 }

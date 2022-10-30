@@ -5,3 +5,7 @@
   min-height: 100px;
   z-index: 5;
 }
+
+.card > *:not(:first-child) *:not(:last-child) {
+  padding-inline: 1rem;
+}

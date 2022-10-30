@@ -21,16 +21,16 @@
 
 .sortiesCard {
   /* background-color: var(--black); */
-  border-bottom: 2px solid var(--card-bg);
+  border-bottom: 1px solid var(--border-color);
   /* border-radius: 6px; */
   /* margin-block: 6px; */
-  min-height: 100px;
   z-index: 5;
 }
 
 @media screen and (min-width: 1050px) {
   .sortiesCard {
-    width: 500px;
+    width: fit-content;
+    max-width: 600px;
   }
 
   .stars-1 {

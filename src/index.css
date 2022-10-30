@@ -8,10 +8,11 @@
 
 :root {
   --font-family: 'Rubik', 'Arial';
-  --black: #030B12;
+  --black-bg: #030B12;
   --dark-grey: #0F1A23;
   --grey: #3c5568;
-  --light-grey: #71849c;
+  --text-color: #9fadbf;
+  --border-color: #57677a;
   --cta-color: #A5BDDA;
   --white: #fff;
   --yellow-gradient: linear-gradient(90deg, rgba(255, 226, 116, 1) 0%, rgba(239, 160, 124, 1) 100%);
@@ -34,7 +35,7 @@ body {
   direction: rtl;
   font-family: var(--font-family);
   /* height: 100vh; */
-  background-color: var(--black);
+  background-color: var(--black-bg);
 }
 
 /* width */
@@ -67,7 +68,7 @@ body {
 }
 
 .subTitle {
-  color: var(--light-grey);
+  color: var(--text-color);
   font-weight: 200;
   letter-spacing: 0.24rem;
   /* margin-block: 0.5rem; */
@@ -110,14 +111,15 @@ body {
   font-size: 1rem;
   line-height: 1.5em;
   font-weight: 200;
-  color: var(--light-grey);
+  color: var(--text-color);
   word-break: break-word;
+  text-overflow:ellipsis;
 }
 
 
 @media screen and (min-width: 1050px) {
   .title {
-    font-size: 4rem;
+    font-size: 3.2rem;
     font-weight: 700;
     color: var(--white);
     word-break: break-word;
@@ -126,7 +128,7 @@ body {
   .subTitle {
     font-weight: 200;
     letter-spacing: 0.4rem;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     line-height: 2.4rem;
   }
 

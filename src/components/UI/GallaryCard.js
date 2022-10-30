@@ -4,18 +4,18 @@ import classes from "./GallaryCard.module.css";
 
 const GallaryCard = (props) => {
   const cardRef = useRef();
-  const paragraphArray = Array.from(props.content.text);
-  const maxLetters = 137;
+  // const paragraphArray = Array.from(props.content.text);
+  // const maxLetters = 137;
 
-  let newArray = paragraphArray.filter(
-    (item, index) => index <= maxLetters - 1
-  );
+  // let newArray = paragraphArray.filter(
+  //   (item, index) => index <= maxLetters - 1
+  // );
 
-  if (paragraphArray.length > maxLetters - 1) {
-    newArray.push("...");
-  }
+  // if (paragraphArray.length > maxLetters - 1) {
+  //   newArray.push("...");
+  // }
 
-  const newText = newArray.join("");
+  // const newText = newArray.join("");
 
   const cardImage = {
     backgroundImage: `url(${
@@ -43,7 +43,7 @@ const GallaryCard = (props) => {
           {props.content.courseName}
         </h3>
         <div className={classes["text-area"]}>
-          <p className="text">{newText}</p>
+          <p className={`text ${classes.text}`}>{props.content.text}</p>
         </div>
         <svg
           width="43"
