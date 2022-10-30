@@ -7,6 +7,7 @@ import Roles from "./components/Layout/roles/Roles";
 import Footer from "./components/Layout/footer/Footer";
 import Modal from "./components/UI/Modal";
 import CoursesFullContent from "./components/Layout/courses-expanded/CoursesFullContent";
+import Info from "./pages/Info";
 
 const App = () => {
   /* hello */
@@ -16,32 +17,21 @@ const App = () => {
     setIsModalOpen((prev) => !prev);
   };
 
-  useEffect(() => {
-    if (!isModalOpen) {
-      if (typeof window != "undefined" && window.document) {
-        document.body.style.overflow = "visible";
-        
-      }
-      return;
-    }
-    if (typeof window != "undefined" && window.document) {
-      document.body.style.overflow = "hidden";
-    }
-  }, [isModalOpen]);
-
   return (
-    <div className="App" style={{ overflowY: isModalOpen && "hidden" }}>
+    <div className="App">
       {isModalOpen && (
         <Modal onToggleModal={toggleModal} style={{ top: 0, margin: 0 }}>
           <CoursesFullContent />
         </Modal>
       )}
-      <Opening content={content} />
-      <main className="main-content" role="main">
-        <SortiesProccess content={content} />
-        <Roles content={content} onToggleModal={toggleModal} />
-      </main>
-      <Footer content={content} />
+      <Info isModalOpen={isModalOpen}>
+        <Opening content={content} />
+        <main className="main-content" role="main">
+          <SortiesProccess content={content} />
+          <Roles content={content} onToggleModal={toggleModal} />
+        </main>
+        <Footer content={content} />
+      </Info>
     </div>
   );
 };

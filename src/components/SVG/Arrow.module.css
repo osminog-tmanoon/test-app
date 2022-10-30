@@ -1,0 +1,6 @@
+.cls-1 > * {
+  stroke: var(--arrow-color);
+}
+.cls-1:hover > * {
+  stroke: var(--arrow-color);
+}

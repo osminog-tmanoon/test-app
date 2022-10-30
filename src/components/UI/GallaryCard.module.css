@@ -70,10 +70,3 @@
   grid-row: 4;
   transform: scale(1.4);
 }
-
-.cls-1 > * {
-  stroke: var(--arrow-color);
-}
-.cls-1:hover > * {
-  stroke: var(--arrow-color);
-}

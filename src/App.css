@@ -1,32 +1,4 @@
 .App {
-  /* overflow-y: hidden; */
   background-color: var(--black);
-  display: grid;
-  grid-template-columns: 100vw;
-  grid-template-rows: 603px auto auto;
-}
-
-
-.main-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-
-@media screen and (min-width: 650px) {
-  .App {
-    grid-template-rows: 750px auto auto;
-  }
-}
-
-@media screen and (min-width: 850px) {
-  .App {
-    grid-template-rows: 800px auto auto;
-  }
-}
-
-@media screen and (min-width: 1050px) {
-  .App {
-    grid-template-rows: 280px auto auto;
-  }
+  overflow: hidden;
 }
