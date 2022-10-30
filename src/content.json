@@ -51,14 +51,14 @@
   {
     "footer": [
       {
-        "iconUrl": "./instagram.svg",
+        "iconUrl": "instagram.svg",
         "text": "bsmch.alpha",
         "action": "link",
         "actionValue": "https://instagram.com/bsmch.alpha?igshid=YmMyMTA2M2Y=",
         "id": 0
       },
       {
-        "iconUrl": "./phone.svg",
+        "iconUrl": "phone.svg",
         "text": "972509275359+",
         "actionValue": "+972509275359",
         "action": "phone",
