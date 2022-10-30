@@ -1,5 +1,4 @@
 import React from 'react';
-import classes from "./Arrow.module.css"
 
 const Arrow = (props) => {
   return (
@@ -9,7 +8,7 @@ const Arrow = (props) => {
     viewBox="0 0 43 21"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
-    className={`${props.className} ${classes["cls-1"]}`}
+    className={props.className}
   >
     <path
       d="M1 11H29"

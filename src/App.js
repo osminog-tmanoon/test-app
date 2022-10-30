@@ -20,8 +20,11 @@ const App = () => {
   return (
     <div className="App">
       {isModalOpen && (
-        <Modal onToggleModal={toggleModal} style={{ top: 0, margin: 0 }}>
-          <CoursesFullContent />
+        <Modal
+          onToggleModal={toggleModal}
+          style={{ marginTop: 90, borderRadius: 20 }}
+        >
+          <CoursesFullContent onToggleModal={toggleModal} />
         </Modal>
       )}
       <Info isModalOpen={isModalOpen}>

@@ -5,14 +5,6 @@ import classes from "./GallaryCard.module.css";
 
 const GallaryCard = (props) => {
   const cardImage = {
-    // backgroundImage: `url(${
-    //   process.env.PUBLIC_URL +
-    //   `${
-    //     props.content.courseImage
-    //       ? props.content.courseImage
-    //       : "./placeholderImage-3.svg"
-    //   }`
-    // })`,
     opacity: props.content.courseImage ? 0.6 : 0.12,
   };
 
