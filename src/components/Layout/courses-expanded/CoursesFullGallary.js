@@ -6,19 +6,48 @@ import condition1 from "../../../assests/SVG/condition-svg/condition1.svg";
 import condition2 from "../../../assests/SVG/condition-svg/condition2.svg";
 import condition3 from "../../../assests/SVG/condition-svg/condition3.svg";
 
-const conditionArray = [condition1, condition2, condition3]
+const conditionArray = [condition1, condition2, condition3];
+const content = [
+  {
+    header: "מהם תנאי הקבלה?",
+    extraInfo: [
+      'פרופיל: 25 ומעלה \n דפ"ר: 60 ומעלה',
+      'פרופיל: 25 ומעלה \n דפ"ר: 60 ומעלה'
+    ],
+    id: 0
+  },
+  {
+    header: "מה במסלול?",
+    extraInfo: [
+      'פרופיל: 25 ומעלה \n דפ"ר: 60 ומעלה',
+      'פרופיל: 25 ומעלה \n דפ"ר: 60 ומעלה'
+    ],
+    id: 1
+  },
+  {
+    header: "איפה משרתים?",
+    extraInfo: [
+      'פרופיל: 25 ומעלה \n דפ"ר: 60 ומעלה',
+      'פרופיל: 25 ומעלה \n דפ"ר: 60 ומעלה'
+    ],
+    id: 2
+  }
+];
+
 
 const CoursesFullGallary = (props) => {
-  const cards = coursesContent[props.selecetedCourse].conditions.map((item, index) => {
-    return (
-      <CourseCondition
-        header={item.header}
-        imgUrl={conditionArray[index]}
-        info={item.extraInfo}
-        key={item.id}
-      />
-    );
-  });
+  const cards = content.map(
+    (item, index) => {
+      return (
+        <CourseCondition
+          header={item.header}
+          imgUrl={conditionArray[index]}
+          extraInfo={item.extraInfo}
+          key={item.id}
+        />
+      );
+    }
+  );
 
   return (
     <div className={classes["option-footer"]}>
