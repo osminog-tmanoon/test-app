@@ -22,7 +22,7 @@ const App = () => {
   };
 
   return (
-    <div className="App">
+    <div className="App overlay custom">
       <Info isModalOpen={isModalOpen}>
         <Route path="/:courseId">
           <Modal

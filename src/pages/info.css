@@ -2,7 +2,7 @@
   background-color: var(--black);
   display: grid;
   overflow: hidden;
-  grid-template-columns: 100vw;
+  grid-template-columns: 100%;
   grid-template-rows: 603px auto auto;
   min-height: 100vh;
 }
@@ -13,6 +13,7 @@
   flex-direction: column;
   justify-content: space-around;
 }
+
 
 @media screen and (min-width: 650px) {
   .info-page {
