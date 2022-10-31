@@ -6,7 +6,7 @@ const Roles = (props) => {
   const content = props.content.courses;
 
   const gallaryItems = content.gallary.map((item) => (
-    <GallaryCard content={item} key={item.id} onToggleModal={props.onToggleModal}/>
+    <GallaryCard content={item} key={item.id} onToggleModal={props.modalToTrue}/>
   ));
 
   return (

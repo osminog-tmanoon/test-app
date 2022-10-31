@@ -8,6 +8,7 @@ import Footer from "./components/Layout/footer/Footer";
 import Modal from "./components/UI/Modal";
 import CoursesFullContent from "./components/Layout/courses-expanded/CoursesFullContent";
 import Info from "./pages/Info";
+import { Route, Router } from "react-router-dom";
 
 const App = () => {
   /* hello */
@@ -17,23 +18,33 @@ const App = () => {
     setIsModalOpen((prev) => !prev);
   };
 
+  const modalToFalse = () => {
+    setIsModalOpen(false);
+  };
+
+  const modalToTrue = () => {
+    setIsModalOpen(true);
+  };
+
   return (
     <div className="App">
-      {isModalOpen && (
-        <Modal
-          onToggleModal={toggleModal}
-          style={{ marginTop: 90, borderRadius: 20 }}
-        >
-          <CoursesFullContent onToggleModal={toggleModal} />
-        </Modal>
-      )}
       <Info isModalOpen={isModalOpen}>
-        <Opening content={content} />
-        <main className="main-content" role="main">
-          <SortiesProccess content={content} />
-          <Roles content={content} onToggleModal={toggleModal} />
-        </main>
-        <Footer content={content} />
+        <Route path="/qa">
+          <Modal
+            modalToFalse={modalToFalse}
+            style={{ marginTop: 90, borderRadius: 20 }}
+          >
+            <CoursesFullContent modalToFalse={modalToFalse}/>
+          </Modal>
+        </Route>
+        <Route path="/">
+          <Opening content={content} />
+          <main className="main-content" role="main">
+            <SortiesProccess content={content} />
+            <Roles content={content} modalToTrue={modalToTrue} />
+          </main>
+          <Footer content={content} />
+        </Route>
       </Info>
     </div>
   );

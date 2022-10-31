@@ -4,19 +4,24 @@ import Arrow from "../../SVG/Arrow";
 import GallaryCard from "../../UI/GallaryCard";
 import classes from "./CoursesFullContent.module.css";
 import CoursesFullGallary from "./CoursesFullGallary";
+import { useHistory } from "react-router-dom";
 
 const CoursesFullContent = (props) => {
+  const history = useHistory();
   const content = coursesContent.qa;
 
-  const liElements = content.aboutRole.map((text) => (
-    <li>{text}</li>
-  ));
+  const liElements = content.aboutRole.map((text) => <li>{text}</li>);
+
+  const exitModalClickHandler = () => {
+    props.modalToFalse();
+    history.push("/");
+  };
 
   return (
     <article className={classes["article-container"]}>
       <span
         className={classes["close-btn"]}
-        onClick={props.onToggleModal}
+        onClick={exitModalClickHandler}
       ></span>
       <iframe
         className={classes["article-image"]}

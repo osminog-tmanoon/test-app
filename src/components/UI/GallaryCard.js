@@ -1,15 +1,24 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 import Arrow from "../SVG/Arrow";
 import Card from "./Card";
 import classes from "./GallaryCard.module.css";
 
 const GallaryCard = (props) => {
+  const history = useHistory();
+
   const cardImage = {
     opacity: props.content.courseImage ? 0.6 : 0.12,
   };
 
+  const onClickHandle = () => {
+    props.onToggleModal();
+    history.push('/qa')
+  }
+
+
   return (
-    <div onClick={props.onToggleModal}>
+    <div onClick={onClickHandle}>
       <Card className={classes["gallar-card-container"]}>
         <div className={classes['gallary-image--container']}>
           <img
