@@ -13,14 +13,13 @@ const GallaryCard = (props) => {
 
   const onClickHandle = () => {
     props.onToggleModal();
-    history.push(`/${props.courseName}`)
-  }
-
+    history.push(`/${props.courseName}`);
+  };
 
   return (
     <div onClick={onClickHandle}>
       <Card className={classes["gallar-card-container"]}>
-        <div className={classes['gallary-image--container']}>
+        <div className={classes["gallary-image--container"]}>
           <img
             className={classes["gallary-image"]}
             style={cardImage}
@@ -42,7 +41,7 @@ const GallaryCard = (props) => {
         <div className={classes["text-area"]}>
           <p className={`text ${classes.text}`}>{props.content.text}</p>
         </div>
-        <Arrow className={classes.icon}/>
+        <Arrow className={classes.icon} />
       </Card>
     </div>
   );

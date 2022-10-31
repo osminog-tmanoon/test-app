@@ -9,7 +9,7 @@
   overflow-x: hidden;
   overflow-y: overlay;
   /* scrollbar-gutter: auto; */
-  animation: cardFadein forwards 300ms;
+  animation: cardFadein forwards 300ms ease;
 }
 
 .modal-container-close {
@@ -23,7 +23,7 @@
   overflow-x: hidden;
   overflow-y: overlay;
   /* scrollbar-gutter: auto; */
-  animation: modalFadeout forwards 300ms;
+  animation: modalFadeout forwards 300ms ease;
 }
 
 .modal-overlay {
@@ -53,12 +53,39 @@
   }
 }
 
-
 @keyframes cardFadein {
   from {
     opacity: 0;
   }
   to {
     opacity: 1;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .modal-container {
+    animation: cardFadein forwards 300ms ease;
+  }
+
+  .modal-container-close {
+    animation: cardFadeout forwards 300ms ease;
+  }
+
+  @keyframes cardFadein {
+    from {
+      top: 100vh;
+    }
+    to {
+      top: 0;
+    }
+  }
+
+  @keyframes cardFadeout {
+    from {
+      top: 0;
+    }
+    to {
+      top: 100vh;
+    }
   }
 }

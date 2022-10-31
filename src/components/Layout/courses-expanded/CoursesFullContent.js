@@ -1,4 +1,4 @@
-import React, { useReducer } from "react";
+import React, { useEffect } from "react";
 import coursesContent from "../../../courses-content.json";
 import Arrow from "../../SVG/Arrow";
 import GallaryCard from "../../UI/GallaryCard";
@@ -21,8 +21,15 @@ const CoursesFullContent = (props) => {
 
   const exitModalClickHandler = () => {
     props.modalToFalse();
-    history.push("/");
   };
+
+  useEffect(() => {
+    if (props.isModalOpen) {
+      setTimeout(() => {
+        history.push("/");
+      }, 300);
+    }
+  }, [props.isModalOpen]);
 
   return (
     <article className={classes["article-container"]}>
