@@ -4,10 +4,17 @@ import classes from "./Roles.module.css";
 
 const Roles = (props) => {
   const content = props.content.courses;
-
-  const gallaryItems = content.gallary.map((item) => (
-    <GallaryCard content={item} key={item.id} onToggleModal={props.modalToTrue}/>
-  ));
+  const gallaryItems = Object.keys(content.gallary).map((nodeName) => {
+    const data = content.gallary[nodeName];
+    return (
+      <GallaryCard
+        courseName={nodeName}
+        content={data}
+        key={data.id}
+        onToggleModal={props.modalToTrue}
+      />
+    );
+  });
 
   return (
     <section className={`${classes["roles-container"]}`}>

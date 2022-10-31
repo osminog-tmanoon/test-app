@@ -13,7 +13,7 @@ const GallaryCard = (props) => {
 
   const onClickHandle = () => {
     props.onToggleModal();
-    history.push('/qa')
+    history.push(`/${props.courseName}`)
   }
 
 

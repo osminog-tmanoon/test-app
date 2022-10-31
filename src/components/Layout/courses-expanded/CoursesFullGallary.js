@@ -22,7 +22,7 @@ const CoursesFullGallary = () => {
 
   return (
     <div className={classes["option-footer"]}>
-      <p className={classes["condition-container"]}>{cards}</p>
+      <div className={classes["condition-container"]}>{cards}</div>
     </div>
   );
 };

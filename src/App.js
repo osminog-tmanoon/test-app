@@ -8,15 +8,11 @@ import Footer from "./components/Layout/footer/Footer";
 import Modal from "./components/UI/Modal";
 import CoursesFullContent from "./components/Layout/courses-expanded/CoursesFullContent";
 import Info from "./pages/Info";
-import { Route, Router } from "react-router-dom";
+import { Route, Router, useRouteMatch } from "react-router-dom";
 
 const App = () => {
   /* hello */
   const [isModalOpen, setIsModalOpen] = useState(false);
-
-  const toggleModal = () => {
-    setIsModalOpen((prev) => !prev);
-  };
 
   const modalToFalse = () => {
     setIsModalOpen(false);
@@ -29,12 +25,12 @@ const App = () => {
   return (
     <div className="App">
       <Info isModalOpen={isModalOpen}>
-        <Route path="/qa">
+        <Route path="/:courseId">
           <Modal
             modalToFalse={modalToFalse}
             style={{ marginTop: 90, borderRadius: 20 }}
           >
-            <CoursesFullContent modalToFalse={modalToFalse}/>
+            <CoursesFullContent modalToFalse={modalToFalse} />
           </Modal>
         </Route>
         <Route path="/">
