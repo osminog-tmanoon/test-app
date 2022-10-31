@@ -59,7 +59,7 @@ body {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #2c3f4f;
+  background: #ffffff;
 }
 
 .title {

@@ -8,6 +8,7 @@
   align-items: flex-start;
   overflow-x: hidden;
   overflow-y: overlay;
+  transition: all 300ms;
   /* scrollbar-gutter: auto; */
 }
 
