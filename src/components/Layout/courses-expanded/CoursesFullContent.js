@@ -49,16 +49,16 @@ const CoursesFullContent = (props) => {
       ></span>
       {!content && (
         <>
-          <h1 className="title">
-            מצטערים, לא הצלחנו למצוא מה שאתם מחפשים.
+          <h1 className="cartTitle">
+            מצטערים, לא הצלחנו למצוא את מה שאתם מחפשים.
           </h1>
-          <h3 className="cartTitle">אבל הנה שיר  שיררגיע אתכם: </h3>
+          {/* <h3 className="cartTitle">אבל הנה שיר  שיררגיע אתכם: </h3>
           <iframe
             className={classes["article-image"]}
             src="https://www.youtube.com/embed/tgbNymZ7vqY"
             loading="lazy"
           ></iframe>
-          <div></div>
+          <div></div> */}
         </>
       )}
     </article>
