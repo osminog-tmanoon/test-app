@@ -17,18 +17,17 @@ const Footer = (props) => {
 
   const chooseAction = {
     phone: callNumber,
-    link: openInstagramLink,
+    link: openInstagramLink
   };
 
   const contactElements = content.map((item) => (
-    <div className={classes["contact-icon"]} key={item.id}>
-      <div
-        className={classes.link}
-        onClick={(event) => chooseAction[item.action](event, item.actionValue)}
-      >
-        <img src={process.env.PUBLIC_URL + `${item.iconUrl}`} />
-        <p className={classes["links-text"]}> {item.text}</p>
-      </div>
+    <div
+      onClick={(event) => chooseAction[item.action](event, item.actionValue)}
+      className={classes["contact-continaer"]}
+      key={item.id}
+    >
+      <div className={classes[`${item.className}`]}></div>
+      <p className={classes["links-text"]}> {item.text}</p>
     </div>
   ));
 

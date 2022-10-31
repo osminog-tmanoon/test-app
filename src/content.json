@@ -131,15 +131,15 @@
   ],
   "footer": [
     {
-      "iconUrl": "/instagram.svg",
       "text": "bsmch.alpha",
+      "className": "instagram-url",
       "action": "link",
       "actionValue": "https://instagram.com/bsmch.alpha?igshid=YmMyMTA2M2Y=",
       "id": 0
     },
     {
-      "iconUrl": "/phone.svg",
       "text": "972509275359+",
+      "className": "phone-url",
       "actionValue": "+972509275359",
       "action": "phone",
       "id": 1
