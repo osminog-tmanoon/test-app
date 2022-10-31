@@ -40,7 +40,7 @@ const CoursesFullContent = (props) => {
             </div>
             <ul className={`text ${classes["about-role"]}`}>{liElements}</ul>
           </article>
-          <CoursesFullGallary />
+          <CoursesFullGallary selecetedCourse={newUrl}/>
         </>
       )}
       <span

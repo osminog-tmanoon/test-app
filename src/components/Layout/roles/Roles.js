@@ -3,12 +3,12 @@ import GallaryCard from "../../UI/GallaryCard";
 import classes from "./Roles.module.css";
 
 const Roles = (props) => {
-  const content = props.content.courses;
+  const content = props.content;
   const gallaryItems = Object.keys(content.gallary).map((nodeName) => {
     const data = content.gallary[nodeName];
     return (
       <GallaryCard
-        courseName={nodeName}
+        courseName={data.urlKey}
         content={data}
         key={data.id}
         onToggleModal={props.modalToTrue}
@@ -24,7 +24,8 @@ const Roles = (props) => {
       <article className={classes["gallary"]}>
         <div className={classes["overfow-flex"]}>{gallaryItems}</div>
       </article>
-      <div className={classes["bg-rectangle"]}></div>
+      <div className={classes["stars-1"]}></div>
+      <div className={props.index % 2 === 0 ? classes["bg-rectangle"] : classes["bg-rectangle-right"]}></div>
     </section>
   );
 };

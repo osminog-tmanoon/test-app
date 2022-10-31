@@ -5,6 +5,7 @@
   align-self: flex-end;
   bottom: 0;
   width: 100vw;
+  margin-top: 60px;
   background-color: var(--dark-grey);
   bottom: 0;
   z-index: 2;

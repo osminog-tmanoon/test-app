@@ -8,8 +8,8 @@ import condition3 from "../../../assests/SVG/condition-svg/condition3.svg";
 
 const conditionArray = [condition1, condition2, condition3]
 
-const CoursesFullGallary = () => {
-  const cards = coursesContent.qa.conditions.map((item, index) => {
+const CoursesFullGallary = (props) => {
+  const cards = coursesContent[props.selecetedCourse].conditions.map((item, index) => {
     return (
       <CourseCondition
         header={item.header}

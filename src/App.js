@@ -36,7 +36,9 @@ const App = () => {
           <Opening content={content} />
           <main className="main-content" role="main">
             <SortiesProccess content={content} />
-            <Roles content={content} modalToTrue={modalToTrue} />
+            {content.courses.map((courseContent, index) => (
+              <Roles key={courseContent.id} index={index} content={courseContent} modalToTrue={modalToTrue} />
+            ))}
           </main>
           <Footer content={content} />
         </Route>
