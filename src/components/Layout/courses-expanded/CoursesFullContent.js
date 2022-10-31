@@ -3,6 +3,7 @@ import coursesContent from "../../../courses-content.json";
 import Arrow from "../../SVG/Arrow";
 import GallaryCard from "../../UI/GallaryCard";
 import classes from "./CoursesFullContent.module.css";
+import CoursesFullGallary from "./CoursesFullGallary";
 
 const CoursesFullContent = (props) => {
   const content = coursesContent.qa;
@@ -29,6 +30,7 @@ const CoursesFullContent = (props) => {
         </div>
         <ul className={`text ${classes["about-role"]}`}>{liElements}</ul>
       </article>
+      <CoursesFullGallary />
     </article>
   );
 };
