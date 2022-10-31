@@ -4,6 +4,7 @@
   overflow: hidden;
   grid-template-columns: 100vw;
   grid-template-rows: 603px auto auto;
+  height: 100vh;
 }
 
 
