@@ -6,9 +6,9 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  overflow-y: auto;
+  overflow-y: hidden;
   overflow-x: hidden;
-  scrollbar-gutter: auto;
+  /* scrollbar-gutter: auto; */
 }
 
 .modal-overlay {

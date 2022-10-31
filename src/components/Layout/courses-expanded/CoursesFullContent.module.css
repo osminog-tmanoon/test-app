@@ -3,7 +3,11 @@
   flex-direction: column;
   border: 1px solid var(--border-color);
   --border-radius: 20px;
-  border-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+  border-top-left-radius: var(--border-radius);
+  height: 90vh;
+  overflow-y: auto;
+  overflow: overlap;
 }
 
 .article-container > *:not(.article-image) {

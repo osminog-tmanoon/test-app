@@ -34,7 +34,7 @@
   border-bottom-left-radius: 6px;
 }
 
-@media screen and (min-width: 1050px) {
+@media screen and (min-width: 913px) {
   .roles-container {
     margin-top: 80px;
   }

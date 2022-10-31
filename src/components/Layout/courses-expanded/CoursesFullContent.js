@@ -9,7 +9,7 @@ import { useHistory, useRouteMatch } from "react-router-dom";
 const CoursesFullContent = (props) => {
   const history = useHistory();
   const { path, url } = useRouteMatch();
-  console.log(url);
+
   const newUrl = Array(...url)
     .filter((letter) => letter !== "/")
     .join("");
