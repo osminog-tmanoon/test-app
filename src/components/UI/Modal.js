@@ -1,18 +1,31 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useHistory } from "react-router-dom";
 import Card from "./Card";
 import classes from "./Modal.module.css";
 
 const Modal = (props) => {
-  const history = useHistory()
+  const history = useHistory();
 
   const overlayClickHandler = () => {
-    props.modalToFalse()
-    history.push('/')
-  }
+    props.modalToFalse();
+  };
+
+  useEffect(() => {
+    if (!props.isModalOpen) {
+      setTimeout(() => {
+        history.push("/");
+      }, 300);
+    }
+  }, [props.isModalOpen]);
 
   return (
-    <div className={classes["modal-container"]}>
+    <div
+      className={
+        props.isModalOpen
+          ? `${classes["modal-container"]}`
+          : `${classes["modal-container-close"]}`
+      }
+    >
       <div
         className={classes["modal-overlay"]}
         onClick={overlayClickHandler}

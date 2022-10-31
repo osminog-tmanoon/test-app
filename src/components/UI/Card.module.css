@@ -4,18 +4,8 @@
   /* margin-block: 6px; */
   min-height: 100px;
   z-index: 5;
-  animation: cardFadein alternate forwards 500ms ease;
 }
 
 .card > *:not(:first-child) *:not(:last-child) {
   padding-inline: 1rem;
-}
-
-@keyframes cardFadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }

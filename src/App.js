@@ -27,7 +27,9 @@ const App = () => {
         <Route path="/:courseId">
           <Modal
             modalToFalse={modalToFalse}
+            isModalOpen={isModalOpen}
             style={{ marginTop: 90, borderRadius: 20 }}
+            modalToTrue={modalToTrue}
           >
             <CoursesFullContent modalToFalse={modalToFalse} />
           </Modal>
@@ -37,7 +39,12 @@ const App = () => {
           <main className="main-content" role="main">
             <SortiesProccess content={content} />
             {content.courses.map((courseContent, index) => (
-              <Roles key={courseContent.id} index={index} content={courseContent} modalToTrue={modalToTrue} />
+              <Roles
+                key={courseContent.id}
+                index={index}
+                content={courseContent}
+                modalToTrue={modalToTrue}
+              />
             ))}
           </main>
           <Footer content={content} />
