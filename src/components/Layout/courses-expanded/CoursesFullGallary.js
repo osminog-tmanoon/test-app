@@ -1,10 +1,28 @@
 import React from "react";
-import classes from "./CoursesFullContent.module.css";
+import CourseCondition from "./CourseCondition";
+import classes from "./CoursesFullGallary.module.css";
+import coursesContent from "../../../courses-content.json";
+import condition1 from "../../../assests/SVG/condition-svg/condition1.svg";
+import condition2 from "../../../assests/SVG/condition-svg/condition2.svg";
+import condition3 from "../../../assests/SVG/condition-svg/condition3.svg";
+
+const conditionArray = [condition1, condition2, condition3]
 
 const CoursesFullGallary = () => {
+  const cards = coursesContent.qa.conditions.map((item, index) => {
+    return (
+      <CourseCondition
+        header={item.header}
+        imgUrl={conditionArray[index]}
+        info={item.extraInfo}
+        key={item.id}
+      />
+    );
+  });
+
   return (
-    <div className={classes["css-class"]}>
-      <p className="text">Shani work only here</p>
+    <div className={classes["option-footer"]}>
+      <p className={classes["condition-container"]}>{cards}</p>
     </div>
   );
 };
