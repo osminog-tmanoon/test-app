@@ -36,10 +36,10 @@
 
 .bg-rectangle-right {
   position: relative;
-  width: 70%;
+  width: 60%;
   height: 350px;
   top: -400px;
-  right: 30%;
+  right: 40%;
   background-image: var(--blue-gradient);
   z-index: 0;
   border-top-right-radius: 6px;
@@ -50,7 +50,21 @@
   position: relative;
   right: 76%;
   transform: translateX(50%);
-  top: -150px;
+  top: -500px;
+  background-image: url('../../../assests/SVG/stars.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 170px;
+  height: 70px;
+  z-index: 0;
+}
+
+
+.stars-1-right {
+  position: relative;
+  right: 26%;
+  transform: translateX(50%);
+  top: -500px;
   background-image: url('../../../assests/SVG/stars.svg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -63,5 +77,18 @@
 @media screen and (min-width: 913px) {
   .roles-container {
     margin-top: 80px;
+  }
+
+  .stars-1 {
+    position: relative;
+    right: 76%;
+    transform: translateX(50%);
+    top: -150px;
+    background-image: url('../../../assests/SVG/stars.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 170px;
+    height: 70px;
+    z-index: 0;
   }
 }

@@ -24,8 +24,20 @@ const Roles = (props) => {
       <article className={classes["gallary"]}>
         <div className={classes["overfow-flex"]}>{gallaryItems}</div>
       </article>
-      <div className={classes["stars-1"]}></div>
-      <div className={props.index % 2 === 0 ? classes["bg-rectangle"] : classes["bg-rectangle-right"]}></div>
+      <div
+        className={
+          (props.index + 1) % 2 === 0
+            ? classes["stars-1"]
+            : classes["stars-1-right"]
+        }
+      ></div>
+      <div
+        className={
+          props.index % 2 === 0
+            ? classes["bg-rectangle"]
+            : classes["bg-rectangle-right"]
+        }
+      ></div>
     </section>
   );
 };
