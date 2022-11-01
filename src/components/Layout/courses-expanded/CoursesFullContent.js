@@ -8,7 +8,7 @@ import { useHistory, useRouteMatch } from "react-router-dom";
 
 const CoursesFullContent = (props) => {
   const history = useHistory();
-  const { path, url } = useRouteMatch();
+  const { url } = useRouteMatch();
 
   const newUrl = Array(...url)
     .filter((letter) => letter !== "/")
@@ -47,7 +47,7 @@ const CoursesFullContent = (props) => {
             </div>
             <ul className={`text ${classes["about-role"]}`}>{liElements}</ul>
           </article>
-          <CoursesFullGallary selecetedCourse={newUrl}/>
+          <CoursesFullGallary selecetedCourse={newUrl} content={content}/>
         </>
       )}
       <span

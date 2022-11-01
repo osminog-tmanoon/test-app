@@ -13,10 +13,9 @@ const CourseCondition = (props) => {
           alt="conditionImage"
         />
         <hr className={classes["line-class"]} />
-        {console.log(props.extraInfo)}
         <ul className={classes["condition-info"]}>
-          {props.extraInfo.map(item => {
-            return <li>{item}</li>
+          {props.extraInfo.map((item, index) => {
+            return <li key={index}>{item}</li>
           })}
         </ul>
       </div>
