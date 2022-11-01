@@ -1,9 +1,27 @@
-import React from "react";
+import React, { useRef } from "react";
 import GallaryCard from "../../UI/GallaryCard";
 import classes from "./Roles.module.css";
 
 const Roles = (props) => {
   const content = props.content;
+  const gallaryRef = useRef();
+
+  const handleNextScroll = () => {
+    console.log(gallaryRef.current.scrollLeft);
+    gallaryRef.current.scrollBy({
+      left: -400,
+      behavior: "smooth",
+    });
+  };
+
+  const handleBackScroll = () => {
+    console.log(gallaryRef.current.scrollLeft);
+    gallaryRef.current.scrollBy({
+      left: 400,
+      behavior: "smooth",
+    });
+  };
+
   const gallaryItems = Object.keys(content.gallary).map((nodeName) => {
     const data = content.gallary[nodeName];
     return (
@@ -21,7 +39,9 @@ const Roles = (props) => {
       <h3 className={`${"sectionTitle"} ${classes["section-title"]}`}>
         {content.title}
       </h3>
-      <article className={classes["gallary"]}>
+      <div className={classes["next-card"]} onClick={handleNextScroll}></div>
+      <div className={classes["back-card"]} onClick={handleBackScroll}></div>
+      <article className={classes["gallary"]} ref={gallaryRef}>
         <div className={classes["overfow-flex"]}>{gallaryItems}</div>
       </article>
       <div

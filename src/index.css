@@ -9,6 +9,7 @@
 :root {
   --font-family: 'Rubik', 'Arial';
   --black-bg: #030B12;
+  --black-bg--hover: #030b1295;
   --dark-grey: #162430;
   --grey: #3c5568;
   --text-color: #9fadbf;

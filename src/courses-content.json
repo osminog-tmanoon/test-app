@@ -1,7 +1,7 @@
 {
   "qa": {
     "urlKey": "qa",
-    "videoUrl": "https://www.youtube.com/embed/tgbNymZ7vqY",
+    "videoUrl": "https://www.youtube.com/embed/AYjmP9lNq2Y",
     "title": "מסלול QA",
     "brief": "אנשי ה-QA משתתפים בתהליך הפיתוח של המערכות המבצעיות התורמות לעליונות הטכנולוגית של צהל עליהם להישאר מעודכנים בטכנולוגיות המתקדמות ביותר ובדרכים שונות לוידוא איכות התוכנות אותן הם בודקים.",
     "aboutRole": [
@@ -29,7 +29,7 @@
     "conditions": [
       {
         "header": "מהם תנאי הקבלה?",
-        "extraInfo": [""],
+        "extraInfo": ["", ""],
         "id": 0
       },
       {

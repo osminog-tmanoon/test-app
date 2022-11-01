@@ -3,6 +3,12 @@
   /* padding-inline: 1.5rem; */
   height: 550px;
   z-index: 1;
+  --arrows-visibiliy: hidden;
+  /* visibility: hidden; */
+}
+
+.roles-container:hover {
+  --arrows-visibiliy: visible;
 }
 
 .section-title {
@@ -13,8 +19,10 @@
   position: relative;
   overflow-x: auto;
   z-index: 2;
+  display: grid;
+  width: 100vw;
+  grid-template-columns: 100px auto;
 }
-
 .overfow-flex {
   padding-inline: var(--white-space);
   overflow-x: visible;
@@ -51,28 +59,26 @@
   right: 76%;
   transform: translateX(50%);
   top: -500px;
-  background-image: url('../../../assests/SVG/stars.svg');
+  background-image: url("../../../assests/SVG/stars.svg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 170px;
   height: 70px;
   z-index: 0;
 }
-
 
 .stars-1-right {
   position: relative;
   right: 26%;
   transform: translateX(50%);
   top: -500px;
-  background-image: url('../../../assests/SVG/stars.svg');
+  background-image: url("../../../assests/SVG/stars.svg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 170px;
   height: 70px;
   z-index: 0;
 }
-
 
 @media screen and (min-width: 913px) {
   .roles-container {
@@ -84,11 +90,77 @@
     right: 76%;
     transform: translateX(50%);
     top: -150px;
-    background-image: url('../../../assests/SVG/stars.svg');
+    background-image: url("../../../assests/SVG/stars.svg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 170px;
     height: 70px;
     z-index: 0;
   }
+
+  .next-card {
+    cursor: pointer;
+    visibility: var(--arrows-visibiliy);
+    position: absolute;
+    width: 100px;
+    height: 400px;
+    left: 0;
+    background-color: var(--black-bg--hover);
+    background-image: url("../../../assests/arrow-next-card.svg");
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    opacity: 0.5;
+    transition: opacity 200ms ease;
+    backdrop-filter: blur(3px);
+    z-index: 3;
+  }
+  
+  .next-card::after {
+    content: "";
+    width: 100px;
+    height: 400px;
+    opacity: 1;
+    transition: opacity 200ms ease;
+    background-color: var(--black-bg--hover);
+    backdrop-filter: blur(3px);
+  }
+  
+  .next-card:hover {
+    opacity: 1;
+  }
+
+  .back-card {
+    cursor: pointer;
+    visibility: var(--arrows-visibiliy);
+    position: absolute;
+   transform: rotate(180deg);
+    width: 100px;
+    height: 400px;
+    right: 0;
+    background-color: var(--black-bg--hover);
+    background-image: url("../../../assests/arrow-next-card.svg");
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    opacity: 0.5;
+    transition: opacity 200ms ease;
+    backdrop-filter: blur(3px);
+    z-index: 3;
+  }
+  
+  .back-card::after {
+    content: "";
+    width: 100px;
+    height: 400px;
+    opacity: 1;
+    transition: opacity 200ms ease;
+    background-color: var(--black-bg--hover);
+    backdrop-filter: blur(3px);
+  }
+  
+  .back-card:hover {
+    opacity: 1;
+  }
+  
 }
