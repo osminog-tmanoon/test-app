@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/info/static/css/main.e98634be.css",
-    "main.js": "/info/static/js/main.96026617.js",
-    "static/media/bg-3.svg": "/info/static/media/bg-3.a66f84ea40753fc02c26.svg",
-    "static/media/logo.png": "/info/static/media/logo.de55269e4f288b7be521.png",
-    "static/media/condition1.svg": "/info/static/media/condition1.1f4be3015de76e18011cb7f34da2afb9.svg",
-    "static/media/condition2.svg": "/info/static/media/condition2.bcce7c8ac154a0cb42eb00663f5ec5a2.svg",
-    "static/media/condition3.svg": "/info/static/media/condition3.19cda1fe9f2ae610ced1b71393973b59.svg",
-    "static/media/stars.svg": "/info/static/media/stars.f88e67d60fbc80bf15cb.svg",
-    "index.html": "/info/index.html",
-    "static/media/phone.svg": "/info/static/media/phone.d45012d9db8be92d2db0.svg",
-    "static/media/instagram.svg": "/info/static/media/instagram.e43c4d6bdc1ab9a8739c.svg",
-    "static/media/close.svg": "/info/static/media/close.09db97596cafd602cffd.svg",
-    "static/media/arrow-next-card.svg": "/info/static/media/arrow-next-card.d6c3ed85772cb129641c.svg",
-    "main.e98634be.css.map": "/info/static/css/main.e98634be.css.map",
-    "main.96026617.js.map": "/info/static/js/main.96026617.js.map"
+    "main.css": "/test-app/static/css/main.2e44f35d.css",
+    "main.js": "/test-app/static/js/main.cdc804b3.js",
+    "static/media/bg-3.svg": "/test-app/static/media/bg-3.a66f84ea40753fc02c26.svg",
+    "static/media/logo.png": "/test-app/static/media/logo.de55269e4f288b7be521.png",
+    "static/media/condition1.svg": "/test-app/static/media/condition1.1f4be3015de76e18011cb7f34da2afb9.svg",
+    "static/media/condition2.svg": "/test-app/static/media/condition2.bcce7c8ac154a0cb42eb00663f5ec5a2.svg",
+    "static/media/condition3.svg": "/test-app/static/media/condition3.19cda1fe9f2ae610ced1b71393973b59.svg",
+    "static/media/stars.svg": "/test-app/static/media/stars.f88e67d60fbc80bf15cb.svg",
+    "index.html": "/test-app/index.html",
+    "static/media/phone.svg": "/test-app/static/media/phone.d45012d9db8be92d2db0.svg",
+    "static/media/instagram.svg": "/test-app/static/media/instagram.e43c4d6bdc1ab9a8739c.svg",
+    "static/media/close.svg": "/test-app/static/media/close.09db97596cafd602cffd.svg",
+    "static/media/arrow-next-card.svg": "/test-app/static/media/arrow-next-card.d6c3ed85772cb129641c.svg",
+    "main.2e44f35d.css.map": "/test-app/static/css/main.2e44f35d.css.map",
+    "main.cdc804b3.js.map": "/test-app/static/js/main.cdc804b3.js.map"
   },
   "entrypoints": [
-    "static/css/main.e98634be.css",
-    "static/js/main.96026617.js"
+    "static/css/main.2e44f35d.css",
+    "static/js/main.cdc804b3.js"
   ]
 }
