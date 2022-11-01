@@ -12,6 +12,7 @@ import { Route } from "react-router-dom";
 
 const App = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [courseUrl, setCourseUrl] = useState('');
 
   const modalToFalse = () => {
     setIsModalOpen(false);
@@ -21,6 +22,7 @@ const App = () => {
     setIsModalOpen(true);
   };
 
+  console.clear();
   return (
     <div className="App overlay custom">
       <Info isModalOpen={isModalOpen}>
@@ -31,7 +33,7 @@ const App = () => {
             style={{ marginTop: 90, borderRadius: 20 }}
             modalToTrue={modalToTrue}
           >
-            <CoursesFullContent modalToFalse={modalToFalse} />
+            <CoursesFullContent modalToFalse={modalToFalse} courseUrl={courseUrl}/>
           </Modal>
         </Route>
         <Route path="/">
@@ -44,6 +46,7 @@ const App = () => {
                 index={index}
                 content={courseContent}
                 modalToTrue={modalToTrue}
+                setCourseUrl={setCourseUrl}
               />
             ))}
           </main>

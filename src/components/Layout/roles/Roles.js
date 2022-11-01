@@ -7,7 +7,6 @@ const Roles = (props) => {
   const gallaryRef = useRef();
 
   const handleNextScroll = () => {
-    console.log(gallaryRef.current.scrollLeft);
     gallaryRef.current.scrollBy({
       left: -400,
       behavior: "smooth",
@@ -15,7 +14,6 @@ const Roles = (props) => {
   };
 
   const handleBackScroll = () => {
-    console.log(gallaryRef.current.scrollLeft);
     gallaryRef.current.scrollBy({
       left: 400,
       behavior: "smooth",
@@ -26,6 +24,7 @@ const Roles = (props) => {
     const data = content.gallary[nodeName];
     return (
       <GallaryCard
+        setCourseUrl={props.setCourseUrl}
         courseName={data.urlKey}
         content={data}
         key={data.id}

@@ -13,7 +13,14 @@ const CoursesFullContent = (props) => {
   const newUrl = Array(...url)
     .filter((letter) => letter !== "/")
     .join("");
-  const content = coursesContent[newUrl] || false;
+
+
+  const content = Object.keys(coursesContent).map((courseName) => {
+    const element = coursesContent[courseName];
+    if (element.urlKey === props.courseUrl) {
+      return element;
+    }
+  }).filter(element => element !== undefined)[0]
 
   const liElements =
     content &&
@@ -47,7 +54,7 @@ const CoursesFullContent = (props) => {
             </div>
             <ul className={`text ${classes["about-role"]}`}>{liElements}</ul>
           </article>
-          <CoursesFullGallary selecetedCourse={newUrl} content={content}/>
+          <CoursesFullGallary selecetedCourse={newUrl} content={content} />
         </>
       )}
       <span
